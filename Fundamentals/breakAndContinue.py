@@ -5,6 +5,7 @@ for status in books:
         print("Stopping production Line")
         break # STOPPING THE LOOP, NO MORE ITERATIONS
     print(f"This car is {status}. ")
+    print("Shipping New car to Customer")
 
 #############################################
 for status in books:
