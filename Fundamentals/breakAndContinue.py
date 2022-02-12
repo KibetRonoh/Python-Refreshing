@@ -13,4 +13,4 @@ for status in books:
         print("Found Faulthy car, skipping production....")
         continue #SKIP THE FAULTY ONE AND GO TO THE NEXT ITARATION
     print(f"This car is {status}. ")
-    print("Shipping New car to Customer")
+    
