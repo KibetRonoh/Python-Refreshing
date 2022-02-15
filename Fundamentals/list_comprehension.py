@@ -57,3 +57,15 @@ if friend.lower() in friends_lower:
     friend_titlecased = friend.title()
     print(f"{friend_titlecased} is one of your friends")
 
+
+
+# LIST COMPREHENSION 8
+friends = ['Rolf', 'ruth', 'charlie', 'jen']
+guests = ['jose', 'Bob', 'Rolf', 'Charlie', 'michael']
+
+
+present_friends = [
+    name.title() # new thing that you want to put into your list
+    for name in guests # iteration over an existing iterable
+    if name.lower()in [f.lower() for f in friends] # list comprehension
+]
