@@ -69,3 +69,10 @@ present_friends = [
     for name in guests # iteration over an existing iterable
     if name.lower()in [f.lower() for f in friends] # list comprehension
 ]
+
+
+# LIST COMPREHENSION 7
+ages = [22, 23, 43, 34, 27, 45]
+odds = {age for age in ages if ages % 2 == 1}
+
+print(odds)
