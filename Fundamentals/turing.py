@@ -4,7 +4,7 @@ def find_max(nums):
         if num > max_num:
             # (Fill in the missing line here)
             max_num = num
-    return max_num
+    
 
 nums = (3,2,1)
 print (find_max(nums))
