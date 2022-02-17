@@ -42,8 +42,6 @@ friends_lower = [name.lower() for name in friends]
 
 if friend.lower() in friends_lower:
     print(f"{friend} is one of your friends")
-
-if friend.lower() in friends_lower:
     friend_titlecased = friend.title()
     print(f"{friend_titlecased} is one of your friends")
 
