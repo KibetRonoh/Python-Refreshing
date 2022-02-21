@@ -1,0 +1,1 @@
+# what is the default caching mechanissm in Django?

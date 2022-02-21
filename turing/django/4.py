@@ -1,0 +1,1 @@
+# which of the following options about pre-site caching in Django is Correct?

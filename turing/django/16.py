@@ -1,0 +1,1 @@
+# which architecture is Django based on?

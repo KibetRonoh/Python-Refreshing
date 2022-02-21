@@ -42,6 +42,8 @@ friends_lower = [name.lower() for name in friends]
 
 if friend.lower() in friends_lower:
     print(f"{friend} is one of your friends")
+
+if friend.lower() in friends_lower:
     friend_titlecased = friend.title()
     print(f"{friend_titlecased} is one of your friends")
 
@@ -69,7 +71,7 @@ present_friends = [
 ]
 
 
-# LIST COMPREHENSION 7
+# LIST COMPREHENSION WITH CONDITION
 ages = [22, 23, 43, 34, 27, 45]
 odds = {age for age in ages if ages % 2 == 1}
 
