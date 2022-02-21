@@ -72,7 +72,3 @@ present_friends = [
 
 
 # LIST COMPREHENSION WITH CONDITION
-ages = [22, 23, 43, 34, 27, 45]
-odds = {age for age in ages if ages % 2 == 1}
-
-print(odds)
