@@ -1,8 +1,120 @@
  How do you find the missing number in a given integer array of 1 to 100?
+def getMissingNo(A):
+    n = len(A)
+    total = (n + 1)*(n + 2)/2
+    sum_of_A = sum(A)
+    return total - sum_of_A
+ 
+A = [1, 2, 4, 5, 6]
+miss = getMissingNo(A)
+print(miss)
 
 - [] How do you find the duplicate number on a given integer array?
+count the duplicates in a list in pythonpython by Repulsive Raven on Jan 30 2021 Comment
+9
+1
+some_list=['a','b','c','b','d','m','n','n']
+2
+​
+3
+ my_list=sorted(some_list)
+4
+ 
+5
+duplicates=[]
+6
+for i in my_list:
+7
+     if my_list.count(i)>1:
+8
+         if i not in duplicates:
+9
+             duplicates.append(i)
+10
+ 
+11
+print(duplicates)
+how to find duplicate numbers in list in pythonpython by Clear Chimpanzee         on Jun 06 2021 Comment
+2
+1
+l=[1,2,3,4,5,2,3,4,7,9,5]
+2
+l1=[]
+3
+for i in l:
+4
+    if i not in l1:
+5
+        l1.append(i)
+6
+    else:
+7
+        print(i,end=' ')
+
+
+
+PROGRAM:
+#Initialize array     
+arr = [1, 2, 3, 4, 2, 7, 8, 8, 3];     
+     
+print("Duplicate elements in given array: ");    
+#Searches for duplicate element    
+for i in range(0, len(arr)):    
+    for j in range(i+1, len(arr)):    
+        if(arr[i] == arr[j]):    
+            print(arr[j]);    
+
 
 - [] How do you find the largest and smallest number in an unsorted integer array?
+
+# Python prog to illustrate the following in a list
+def find_len(list1):
+    length = len(list1)
+    list1.sort()
+    print("Largest element is:", list1[length-1])
+    print("Smallest element is:", list1[0])
+    print("Second Largest element is:", list1[length-2])
+    print("Second Smallest element is:", list1[1])
+  
+# Driver Code
+list1=[12, 45, 2, 41, 31, 10, 8, 6, 4]
+Largest = find_len(list1)
+
+
+
+
+# Python program to find largest, smallest, 
+# second largest and second smallest in a
+# list with complexity O(n)
+def Range(list1): 
+    largest = list1[0] 
+    lowest = list1[0] 
+    largest2 = None
+    lowest2 = None
+    for item in list1[1:]:     
+        if item > largest: 
+            largest2 = largest
+            largest = item 
+        elif largest2 == None or largest2 < item: 
+            largest2 = item 
+        if item < lowest: 
+            lowest2 = lowest
+            lowest = item 
+        elif lowest2 == None or lowest2 > item: 
+            lowest2 = item 
+              
+    print("Largest element is:", largest) 
+    print("Smallest element is:", lowest) 
+    print("Second Largest element is:", largest2) 
+    print("Second Smallest element is:", lowest2) 
+  
+  
+# Driver Code
+list1 = [12, 45, 2, 41, 31, 10, 8, 6, 4]
+Range(list1)
+
+
+
 
 - [] How do you find all pairs of an integer array whose sum is equal to a given number?
 
