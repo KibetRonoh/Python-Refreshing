@@ -19,6 +19,3 @@
 - [] How do you check if a string contains only digits?
 
 - [] How are duplicate characters found in a string?
-
-- [] How do you count a number of vowels and consonants in a given string?
-- [] How do you reverse words in a given sentence?
